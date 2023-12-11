@@ -49,6 +49,7 @@ Modifying a file or two:
 (Should show some message about commits)
 
 5.0 Check commit history: git log
+5.1 Exit log click: q
 
 
 Pusing work onto GitHub:
