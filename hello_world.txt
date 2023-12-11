@@ -1,2 +1,58 @@
-This is a test of GitHub
-Hello World
+Git Commands Handbook:
+
+1. Go to github and make a new repository and name it what you want
+
+2. Get the location of the repo by going to code and copying the SSH key password
+
+3. Create a folder directory: $ mkdir [Name of Folder]
+
+4. Going to the root of directory: $ cd [Name of folder]/
+
+5. Cloning repo: git clone [copied git repo in #2]
+5.1 Testing to see if it works: git remote -v
+- This is local to your machine and not connected to the distributed server on Github
+
+
+Git Workflow:
+(Note, if we are starting new and we would want to get into an already existing repo on our machine. follow this first!)
+0.1 Going to desired Git repo on local machine: $ cd [name of folder of repo]/
+
+0.2 Make sure it went through: $ git remote -v
+
+1.0 Creating NEW file in the local repo: touch [filename.(filetype)]
+1.1 Getting status of newly created file: git status
+(Note the name of file will be RED, this means that the file is not STAGED)
+
+2.0 Adding file to staging area: git add [filename.(filetype) from 1.0]
+2.1 Getting status to make sure it went through: git status
+(The file will now be green, a successful move to the staging area is complete)
+
+3.0 Commiting: git commit -m "(user message) [filename from 1.0]"
+
+
+Modifying a file or two:
+(Assuming the use of VScode, go to the directory of the desired repo we want to modify. Look back at Git Workflow prestep)
+
+1.0 Open the directory in VScode: ~/[path to repo]$ code .
+(This will open the VScode folder desired for modifying. Make any adjustments to code desired and save using Ctrl+S)
+
+2.0 Go back to terminal or if you are using VScode use the built in terminal (Ctrl+') enter this: git status
+(You will see the repo has a red MODIFIED marker with the file that was changed)
+
+3.0 Add changed file to staging area: git add [filename changed]
+3.1 If you changed multiple files you can use: git add .
+3.2 Get the status: git status
+(The file wil now be green ready for commiting)
+
+4.0 Commit: git commit -m "(User message, preferably the files changed)"
+4.1 Check if committed: git status
+(Should show some message about commits)
+
+5.0 Check commit history: git log
+
+
+Pusing work onto GitHub:
+(Assuming you are already located in the directory that is to be pushed)
+
+1.0 Push: git push origin main 
+1.1 Status: git status
