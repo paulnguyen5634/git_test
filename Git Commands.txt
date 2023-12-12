@@ -57,3 +57,5 @@ Pusing work onto GitHub:
 
 1.0 Push: git push origin main 
 1.1 Status: git status
+
+Better Commit messages
