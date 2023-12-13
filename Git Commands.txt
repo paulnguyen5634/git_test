@@ -58,4 +58,9 @@ Pusing work onto GitHub:
 1.0 Push: git push origin main 
 1.1 Status: git status
 
-Better Commit messages
+TLDR:
+- $ git status (Should see red for modified files)
+- $ git add .
+- $ git status
+- $ git commit -m "comment"
+- $ git push origin main
